@@ -1,45 +1,69 @@
-body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body
+{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
     color: #333;
+    background: #fafafa;
+}
+.container
+{
+    width: 460px;
+    margin: auto;
 }
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: #eee;
-    border-radius: 6px;
-    padding: 60px;
+.header
+{
+    width: 400px;
+    padding: 10px 30px;
 }
 
-.hero-unit h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+.board
+{
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+
+    background: #ddd;
 }
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+.row
+{
+    height: 100px;
 }
 
-.box {
+.box
+{
+    float: left;
     width: 100px;
     height: 100px;
-    display: inline-block;
+    font-size: 120px;
+    text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
+}
+.box:hover
+{
+    background: #d1d16f;
 }
 
-.r0,
-.r1 {
-    border-bottom: 5px solid #000;
+.r1
+{
+    height: 140px;
+    border-top: 20px solid #222;
+    border-bottom: 20px solid #222;
 }
 
-.c0,
-.c1 {
-    border-right: 5px solid #222;
+.c1
+{
+    width: 140px;
+    border-right: 20px solid #222;
+    border-left: 20px solid #222;
 }
