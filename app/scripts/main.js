@@ -24,21 +24,21 @@ var turn = function (player){
 
 var boxes = document.getElementsByClassName('box');
 
-var b0 = document.getElementById('b0'),
-	b1 = document.getElementById('b1'),
-	b2 = document.getElementById('b2'),
-	b3 = document.getElementById('b3'),
-	b4 = document.getElementById('b4'),
-	b5 = document.getElementById('b5'),
-	b6 = document.getElementById('b6'),
-	b7 = document.getElementById('b7'),
-	b8 = document.getElementById('b8');
+// var b0 = document.getElementById('b0'),
+// 	b1 = document.getElementById('b1'),
+// 	b2 = document.getElementById('b2'),
+// 	b3 = document.getElementById('b3'),
+// 	b4 = document.getElementById('b4'),
+// 	b5 = document.getElementById('b5'),
+// 	b6 = document.getElementById('b6'),
+// 	b7 = document.getElementById('b7'),
+// 	b8 = document.getElementById('b8');
 
-var boxes
+// var boxes
 
 for (var i = 0; i < boxes.length; i++) {
 	boxes[i].onclick = function () {
-		console.log('you clicked b' + i);
+		console.log('you clicked ' this.id);
 	}
 };
 
@@ -57,6 +57,10 @@ var doMove = function (player, box) {
 		console.log('player ' + board[box] + ' has already gone there, go again');
 
 	}
+}
+
+var pickBest = function (board) {
+
 }
 
 
