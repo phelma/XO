@@ -78,3 +78,6 @@ body
     border-right: 20px solid #222;
     border-left: 20px solid #222;
 }
+#messages {
+    padding: 1em;
+}
